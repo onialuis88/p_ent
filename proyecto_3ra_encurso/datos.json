@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "zona": "capital federal",
+        "nombre": "Roberto",
+        "telefono": 1512345678
+    },
+    {
+        "id": 2,
+        "zona": "zona norte",
+        "nombre": "Emanuel",
+        "telefono": 49514321
+    },
+    {
+        "id": 3,
+        "zona": "zona oeste",
+        "nombre": "Martin",
+        "telefono": 1149414321
+    }
+]
