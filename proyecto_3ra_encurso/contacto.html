@@ -41,13 +41,22 @@
   <h1 class="titprin">Formulario de contacto</h1>
     <p class="titprin">Complete sus datos personales y te contactaremos</p>
 
-    <form action="">
+    <form action="" id="formulario_venta">
+      <input type="text" name="Nombre" id="nombre_contacto" placeholder="Nombre"><br>
+      <input type="text" name="correo" id="correo_contacto" placeholder="Correo"><br>
+      <input type="text" name="Telefono" id="telefono_contacto" placeholder="sin 54, por ej 1124313124"><br>
+      <input type="text" name="Telefono" id="nota_contacto" placeholder="Escriba su pregunta"><br><br>
+
+      <button type="button" onclick="getContacto()">Enviar</button>
+    </form>
+
+    <!-- <form action="">
         <input type="text" name="nombre" placeholder="Nombre y Apellido"><br><br>
         <input type="text" name="correo" placeholder="Correo"><br><br>
         <input type="text" name="telefono" placeholder="Telefono"><br><br>
         <textarea type="text" name="mensaje" placeholder="Escriba aqui su mensaje"></textarea><br><br>
         <button type="button" class="btn btn-secondary" id="enviarinformacion">Enviar</button>
-    </form>
+    </form> -->
 
     <script src="app.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
