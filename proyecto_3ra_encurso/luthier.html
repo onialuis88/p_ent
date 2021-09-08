@@ -59,20 +59,36 @@
     </p>
     <br>
 
-    <div class="formulario_venta">
-      <form action="" id="formulario_venta">
-        <input type="text" name="Nombre" id="nombre_venta" placeholder="Nombre"><br>
-        <input type="text" name="Instrumento" id="instrumento_venta" placeholder="Instrumento"><br>
-        <input type="text" name="Telefono" id="telefono_venta" placeholder="sin 54, por ej 1124313124"><br><br>
+    <div class="container">
+      <!-- FORMULARIO DE VENTA -->
+      <div id="App" class="row pt-6">
 
-        <button type="button" onclick="getVenta()">Enviar</button>
-      </form>
+                  <form id="instrumento">
+                      <div class="form-group">
+                          <input type="text" id="instrumento_venta" placeholder="Tipo de instrumento" class="form-control">
+                      </div>
+                      <div class="form-group">
+                          <input type="number" id="precio_venta" placeholder="Precio a que lo vende"class="form-control">
+                      </div>
+                      <div class="form-group">
+                          <input type="number" id="telefono_venta" placeholder="Telefono" class="form-control">
+                      </div>
+                      <input type="submit" value="Enviar" class="btn btn-primary btn-block">
+                  </form>
+
+          <!--LABEL DE VENTA-->
+          <div id="label_venta" class="col-md-6"></div>
+      </div>
   </div>
 
-      <script src="app.js"></script>
+  <p>O puede consultar el luthier que tiene mas cerca de su barrio</p>
+
+  <button type="btnInformacion" class="btn btn-primary" id="masInformacion">Ver mas</button>
+
+  
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+      <script src="app.js"></script>
 </body>
 </html>

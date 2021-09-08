@@ -1,18 +1,3 @@
-$(document).ready(function(){
-
-    $(window).scroll(function(){
-      if($(this).scrollTop() > 40){
-        $('#topBtn').fadeIn();
-      } else{
-        $('#topBtn').fadeOut();
-      }
-    });
-  
-    $("#topBtn").click(function(){
-      $('html ,body').animate({scrollTop : 0},800);
-    });
-  });
-
 //evento pantalla principal  
 window.onload = function (){
     const efecto = document.querySelector("#effect");
@@ -32,22 +17,42 @@ window.onload = function (){
     }
 }
 
-//formulario de venta de instrumento (VENTA.HTML)
+//formulario de contacto (CONTACTO.HTML)
 
-var getVenta = function (){
-    let nombre = document.getElementById("nombre_venta").value;
-    let instrumento = document.getElementById("instrumento_venta").value;
-    let telefono = document.getElementById("telefono_venta").value;
+var getContacto = function (){
+    let nombre = document.getElementById("nombre_contacto").value;
+    let correo = document.getElementById("correo_contacto").value;
+    let telefono = document.getElementById("telefono_contacto").value;
+    let nota = document.getElementById("nota_contacto").value;
 
-    console.log("Cliente: " + nombre + "; Instrumento: " + instrumento + "; Telefono: " + telefono);
+    console.log("Cliente: " + nombre + "; correo: " + correo + "; Telefono: " + telefono + "; nota" + nota);
     
     //paso de información al localstorage
 
     const enJSON_nombre = JSON.stringify(nombre)
-    const enJSON_instrumento = JSON.stringify(instrumento)
+    const enJSON_correo = JSON.stringify(correo)
     const enJSON_telefono = JSON.stringify(telefono)
-    
-    localStorage.setItem("Nombre: ", enJSON_nombre);
-    localStorage.setItem("Instrumento: ", enJSON_instrumento);
-    localStorage.setItem("Estado", enJSON_telefono);
+    const enJSON_nota = JSON.stringify(nota)
+
+    localStorage.setItem("Cliente: ", enJSON_nombre);
+    localStorage.setItem("Correo: ", enJSON_correo);
+    localStorage.setItem("Telefono: ", enJSON_telefono);
+    localStorage.setItem("Nota: ", enJSON_nota);
 }
+
+//AJAX
+const URLGET = "data/datos.json"
+
+$("#masInformacion").click(() => {
+  $.get(URLGET,function (respuesta,estado){
+      if(estado === "success"){
+        let misDatos = respuesta;
+        for (const dato of misDatos) {
+          $("body").prepend(`<div>
+                                <h3>${dato.zona}</h3>
+                                <p> ${dato.telefono}</p>
+                                </div>`)
+        }
+      }
+  });
+});
