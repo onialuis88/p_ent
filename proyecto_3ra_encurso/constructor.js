@@ -1,3 +1,4 @@
+//constructor de ventas
 export class producto {
     constructor(instrumento, precio, telefono) {
         this.instrumento = instrumento;
