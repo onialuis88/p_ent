@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <!--------- BOOTSTRAP 4.6 ------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+   
+    <!------------- CSS ------------->
+    <link rel="stylesheet" href="css/style.css">
+  
+    <!--------- GOOGLE FONTS -------->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  
+    <!--------- FONT-AWESOME -------->
+    <script src="https://kit.fontawesome.com/06350e9648.js" crossorigin="anonymous"></script>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Venta de Instrumentos</title>
+  </head>
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg">
+    <a class="navbar-brand" href="index.html"><img src="/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Strauss</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+        <li class="nav-item">
+            <a class="nav-link" href="servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="luthier.html">Luthier</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+  <br><br><br>
+
+  <h1 class="titprin">Venta de instrumentos</h1>
+    <p class="titprin">Ofrecemos pagar valores internacionales y contratar un seguro por instrumentos de mayor valor.
+
+    </br> Las tasaciones solo se efectuan con cita previa.
+      Para ello complete los siguientes casilleros para que un luthier se comunique con ud al instante:
+    </p>
+    <br>
+
+    <div class="container">
+      <!------ FORMULARIO DE VENTA ------->
+      <div id="App" class="row pt-6">
+
+        <form id="formularioVenta" class="card-body">
+          <div class="form-group">
+              <input type="text" id="nombre" placeholder="Ingrese su nombre" class="form-control">
+          </div>
+          <div class="form-group">
+              <input type="text" id="instrumento" placeholder="Ingrese su instrumento"
+                  class="form-control">
+          </div>
+          <div class="form-group">
+              <input type="number" id="precio" placeholder="Ingrese el precio"
+                  class="form-control">
+          </div>
+          <div class="form-group">
+              <input type="number" id="telefono" placeholder="Telefono de contacto"
+                  class="form-control">
+          </div>
+          <input type="submit" value="Enviar" class="btn btn-secondary" style="text-align: center;">
+      </form>
+
+          <!------LABEL DE VENTA-------->
+          <div id="label" class="col-md-6"></div>
+        </div>
+    </div>
+
+
+
+  <p>O puede consultar el luthier que tiene mas cerca de su barrio</p>
+
+  <p>Al estar de acuerdo un afirma no tener fiebre, dolor de cabeza ni algun otro sintoma relacionado al covid</p>
+
+  <!-- VER MAS (AJAX) (Comunicación con el catalojo.JSON) -->
+  <div>
+      <input type="checkbox" id="chequeo"><span>Estoy de acuerdo</span>
+  </div>
+  <br>
+  <br>
+  <button type="btnInformacion" class="btn btn-primary" id="masInformacion">Ver mas</button>
+
+  <table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Direccion</th>
+            <th>Telefono</th>
+        </tr>
+    </thead>
+    <tbody id="res">
+
+    </tbody>
+</table>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="App.js" type="module"></script>
+</body>
+</html>

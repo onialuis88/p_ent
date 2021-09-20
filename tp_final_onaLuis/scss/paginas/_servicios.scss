@@ -1,0 +1,22 @@
+.fa,.fas{
+    font-size: 50px;
+    margin: 10px;
+    padding-left: 130px;
+}
+
+#aqui{
+    color: rgb(247, 95, 39);
+}
+
+
+@media (max-width: 1024px) {
+    .titprin{
+        padding-top: 70px;
+    }
+}
+
+p {
+    font-family: $fuentegral;
+    font-size: 20px;
+    color: azure;
+}

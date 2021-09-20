@@ -1,0 +1,17 @@
+[
+ {
+    "nombre": "Emanuel",
+    "direccion": "Cochabamba 2431",
+    "telefono": "15-1234-4321"
+ },
+ {
+     "nombre": "Alejandro",
+     "direccion": "Catamarca 668",
+     "telefono": "15-4321-1234"
+ },
+ {
+    "nombre": "Dario",
+    "direccion": "Florida 99",
+    "telefono": "4941-3794"
+}
+]
