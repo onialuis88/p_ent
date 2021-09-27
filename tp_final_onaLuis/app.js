@@ -6,7 +6,7 @@ import { informacion } from "./datos.js";
 document.getElementById("formularioVenta")
 document.addEventListener("submit", e => {
     e.preventDefault();
-
+ 
     //Obtencion de valores del formulario del HTML
     const nombre = document.getElementById("nombre").value;
     const instrumento = document.getElementById("instrumento").value;

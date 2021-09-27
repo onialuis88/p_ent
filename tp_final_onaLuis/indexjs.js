@@ -4,7 +4,7 @@ window.onload = function (){
   
     window.addEventListener('scroll',scrollEfecto);
   
-    function scrollEfecto () {
+    function scrollEfecto () { 
         if (window.scrollY >= 500) {
             efecto.style.opacity ='1';
             efecto.style.transform = 'translateX(0px)';

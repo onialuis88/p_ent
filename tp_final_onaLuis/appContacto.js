@@ -6,7 +6,7 @@ $("#enviarInformacion").click(function() {
         correo=$('#correoContacto').val(),
         asunto=$('#asuntoContacto').val(),
         mensaje=$('#mensajeContacto').val();
- 
+  
     // validacion de nombre
     if(nombreContacto == ""){
         cambiarColor("nombreContacto");

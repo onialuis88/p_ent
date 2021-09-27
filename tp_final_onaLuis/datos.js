@@ -16,5 +16,5 @@ export class informacion {
       alert("En la brevedad un luthier se comunicara con ud para coordinar visita");
       
   }
-}
+} 
 

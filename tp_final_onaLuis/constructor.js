@@ -6,4 +6,4 @@ export class venta_instrumento {
         this.precio = precio;
         this.telefono = telefono;
     }
-}
+} 
